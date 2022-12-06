@@ -1,12 +1,7 @@
-import { Route, Routes } from "react-router-dom"
-import Counter from "./components/Counter"
+import {Home} from "./containers"
 
 const App = () => {
-    return (
-
-        <Routes>
-        <Route exact path = "/" element={<Counter/>}></Route>
-        </Routes>)
+    return (<><Home/></>)
 }
 
 export default App
