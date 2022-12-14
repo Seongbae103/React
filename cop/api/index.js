@@ -1,0 +1,3 @@
+import axios from "axios";
+const server = `http://lacalhost:8000`
+export const FakeFaces = req => axios.get(`${server}/multiplex/m_movies/fake-faces`, req)

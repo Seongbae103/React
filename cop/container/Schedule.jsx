@@ -1,7 +1,7 @@
-import {TodoInput, TodoList} from "../components"
+import {AddTodo, TodoList} from "cop"
 const Schedule = () => {
     return <>
-        <TodoInput/>
+        <AddTodo/>
         <TodoList/>
     </>
 }
