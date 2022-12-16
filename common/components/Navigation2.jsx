@@ -29,6 +29,9 @@ const Navigation2 = () =>{
             <li class="nav-item">
                 <a class="nav-link" href="#"><Link to ="/iris">Iris</Link></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><Link to ="/fashion">Fashion</Link></a>
+            </li>
         </ul>
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>

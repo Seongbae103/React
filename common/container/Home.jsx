@@ -3,7 +3,9 @@ import {Navigation2, Counter, Footer} from "common"
 import {Schedule} from "cop"
 import {LoginForm, SignUp} from "uat"
 import image from 'images/fashion.png'
-import { Iris, Stroke} from "blog"
+import {Stroke} from "blog"
+import {Iris} from "iris"
+import { Fashion } from "api/dlearn"
 
 const Home = () => {
     const imgSize = {Width:100, Height:100}
@@ -27,7 +29,7 @@ const Home = () => {
                 <Route path="/signup" element={<SignUp/>}></Route>
                 <Route path="/stroke" element={<Stroke/>}></Route>
                 <Route path="/iris" element={<Iris/>}></Route>
-                
+                <Route path="/fashion" element={<Fashion/>}></Route>
             </Routes>
             </td>
         </tr> 
