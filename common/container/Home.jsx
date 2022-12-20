@@ -5,7 +5,8 @@ import {LoginForm, SignUp} from "uat"
 import image from 'images/fashion.png'
 import {Stroke} from "blog"
 import {Iris} from "iris"
-import { Fashion } from "api/dlearn"
+import { Fashion, Number, NaverMovie } from "api"
+
 
 const Home = () => {
     const imgSize = {Width:100, Height:100}
@@ -30,6 +31,8 @@ const Home = () => {
                 <Route path="/stroke" element={<Stroke/>}></Route>
                 <Route path="/iris" element={<Iris/>}></Route>
                 <Route path="/fashion" element={<Fashion/>}></Route>
+                <Route path="/number" element={<Number/>}></Route>
+                <Route path="/navermovie" element={<NaverMovie/>}></Route>
             </Routes>
             </td>
         </tr> 
