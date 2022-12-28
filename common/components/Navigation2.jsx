@@ -36,7 +36,13 @@ const Navigation2 = () =>{
                 <a class="nav-link" href="#"><Link to ="/number">Number</Link></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><Link to ="/navermovie">NaverMovie</Link></a>
+                <a class="nav-link" href="#"><Link to ="/naver-movie">NaverMovie</Link></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><Link to ="/fruits">Fruits</Link></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><Link to ="/naverimdb">NaverImdb</Link></a>
             </li>
         </ul>
         <form class="d-flex" role="search">

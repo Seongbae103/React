@@ -5,7 +5,7 @@ import {LoginForm, SignUp} from "uat"
 import image from 'images/fashion.png'
 import {Stroke} from "blog"
 import {Iris} from "iris"
-import { Fashion, Number, NaverMovie } from "api"
+import { Fashion, Number, NaverMovie, NaverImdb } from "api"
 
 
 const Home = () => {
@@ -32,7 +32,8 @@ const Home = () => {
                 <Route path="/iris" element={<Iris/>}></Route>
                 <Route path="/fashion" element={<Fashion/>}></Route>
                 <Route path="/number" element={<Number/>}></Route>
-                <Route path="/navermovie" element={<NaverMovie/>}></Route>
+                <Route path="/naver-movie" element={<NaverMovie/>}></Route>
+                <Route path="/naverimdb" element={<NaverImdb/>}></Route>
             </Routes>
             </td>
         </tr> 
