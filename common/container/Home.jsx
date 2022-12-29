@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router-dom"
 import {Navigation2, Counter, Footer} from "common"
 import {Schedule} from "cop"
-import {LoginForm, SignUp} from "uat"
+import { SignUp} from "uat"
 import image from 'images/fashion.png'
 import {Stroke} from "blog"
 import {Iris} from "iris"
 import { Fashion, Number, NaverMovie, NaverImdb } from "api"
+import {UserList, UserLogIn } from "security"
 
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
             <Routes>
                 <Route path="/counter" element={<Counter/>}></Route>
                 <Route path="/schedule" element={<Schedule/>}></Route>
-                <Route path="/login" element={<LoginForm/>}></Route>
+                <Route path="/login" element={<UserLogIn/>}></Route>
                 <Route path="/signup" element={<SignUp/>}></Route>
                 <Route path="/stroke" element={<Stroke/>}></Route>
                 <Route path="/iris" element={<Iris/>}></Route>
@@ -34,6 +35,8 @@ const Home = () => {
                 <Route path="/number" element={<Number/>}></Route>
                 <Route path="/naver-movie" element={<NaverMovie/>}></Route>
                 <Route path="/naverimdb" element={<NaverImdb/>}></Route>
+                <Route path="/naverimdb" element={<NaverImdb/>}></Route>
+                <Route path="/user-list" element={<UserList/>}></Route>
             </Routes>
             </td>
         </tr> 

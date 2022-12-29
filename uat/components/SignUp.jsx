@@ -1,13 +1,13 @@
 import './SignUp.css'
 import { useState } from "react"
-import { userSignup } from 'uat/api'
+
 const SignUp = ()=> {
     const [inputs, setInputs] = useState({})
     const {user_name, email, nickname, password} = inputs;
     const onClick = e =>{
         e.preventDefault()
         const request = {user_name, email, nickname, password}
-        userSignup(request)
+        setInputs(request)
         .then((res)=>{
             console.log(`Response is ${res}`)
             localStorage.setItem('token',JSON.stringify(res.config.data))

@@ -1,6 +1,6 @@
 import './LogIn.css'
 import { useState } from "react"
-import { userLogin } from 'uat/api'
+import { uatLogin } from 'uat/api'
 const Login = () => {
     const [inputs, setInputs] = useState({})
     const {email, password} = inputs;
@@ -15,7 +15,7 @@ const Login = () => {
         e.preventDefault()
         const request = {email, password}
         alert(`사용자 이름: ${JSON.stringify(request)}`)
-        userLogin(request)
+        uatLogin(request)
         /**django에 올릴 때 */
         /**성공시 */
         .then((res)=>{

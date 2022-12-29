@@ -1,7 +1,7 @@
 import imdbService from "../api"
 import { useState } from "react"
 
-const NaverImdb = ()=> {
+export default function NaverImdb(){
     const [inputs, setInputs] = useState({})
     const [positive, setPositive] = useState('')
 
@@ -41,5 +41,4 @@ const NaverImdb = ()=> {
 
     </>)
 }
-export default NaverImdb
 

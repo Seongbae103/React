@@ -1,4 +1,5 @@
 import axios from 'axios'
-import {server, users} from 'context'
+const server = `http://localhost:8000`
 
-export const blogLogin = req => axios.post(`${server}${users}/login`, req)
+export const userlist = req => axios.get(`${server}/security/user-list`, req)
+export const userlogin = req => axios.post(`${server}/security/user-login`, req)
